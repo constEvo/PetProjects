@@ -87,6 +87,7 @@ public:
     QTimer* spawnItems_timer;
     QTimer* moveCycle_timer;
     QTimer* moveTank_timer;
+    QTimer* shootTank_timer;
 
 private:
 

@@ -25,9 +25,8 @@ EnemyTank::EnemyTank(int size, GameCharacter* playerCharacter, GameScene* gameSc
     //Connect slots
     QObject::connect(scene->moveTank_timer, SIGNAL(timeout()), this, SLOT(move()));
 
-    shootTimer = new QTimer();
-    QObject::connect(shootTimer, SIGNAL(timeout()), this, SLOT(shoot()));
-    shootTimer->start(700);
+
+    QObject::connect(scene->shootTank_timer, SIGNAL(timeout()), this, SLOT(shoot()));
 }
 
 EnemyTank::~EnemyTank()
@@ -281,17 +280,17 @@ void EnemyTank::handlingTankShooting(const QPointF &tankPos, const QPointF &play
     if (shouldStartShooting(tankPos, playerPos,activationThreshold, stopThreshold))
     {
         engage = true;
-        if (!shootTimer->isActive())
+        if (!scene->shootTank_timer->isActive())
         {
-            shootTimer->start(700);
+            scene->shootTank_timer->start(700);
         }
     }
     else if (shouldStopShooting(tankPos, playerPos,activationThreshold ))
     {
         engage = false;
-        if (shootTimer->isActive())
+        if (scene->shootTank_timer->isActive())
         {
-            shootTimer->stop();
+            scene->shootTank_timer->stop();
         }
     }
 }

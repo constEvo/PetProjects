@@ -73,6 +73,8 @@ GameScene::GameScene()
     moveCycle_timer = new QTimer();
 
     moveTank_timer = new QTimer();
+
+    shootTank_timer = new QTimer();
 }
 
 void GameScene::keyPressEvent(QKeyEvent *event)
@@ -183,15 +185,21 @@ void GameScene::stopTimers()
     {
         spawnItems_timer->stop();
     }
+    //stop cycle movement's timer
     if (moveCycle_timer && moveCycle_timer->isActive())
     {
         moveCycle_timer->stop();
     }
+    //stop tank movement's timer
     if (moveTank_timer && moveTank_timer->isActive())
     {
         moveTank_timer->stop();
     }
-
+    //stop tank's shooting timer
+    if (shootTank_timer && shootTank_timer->isActive())
+    {
+        shootTank_timer->stop();
+    }
 }
 
 void GameScene::resetButton_clicked()
@@ -357,6 +365,11 @@ void GameScene::restartTimers()
     if (moveTank_timer && !moveTank_timer->isActive())
     {
         moveTank_timer->start(100);
+    }
+    //launch tank's shoot timer
+    if (shootTank_timer && !shootTank_timer->isActive())
+    {
+        shootTank_timer->start(700);
     }
 }
 
