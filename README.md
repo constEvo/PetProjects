@@ -24,12 +24,12 @@ There is volume control in settings menu. It is possible to change music and sou
 ![image](https://github.com/user-attachments/assets/ee8416c5-0703-4948-9794-5a9d32a20d5a)
 
 Mapping:
-Left arrow - move left
-Right arrow - move right
-Up arrow - move up
-Down arrow - move down
-Space key - shoot projectile
-Escape key - pause game
+Left arrow - move left,
+Right arrow - move right,
+Up arrow - move up,
+Down arrow - move down,
+Space key - shoot projectile,
+Escape key - pause game.
 
 Build requirements:
 For this project was used QT 6.7.2, that includes next modules: core,gui, multimedia, multimediawidgets, spatialaudio, widgets, with using qmake, and c++ 17.
