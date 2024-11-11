@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>images/apple.png</file>
+        <file>images/dot.png</file>
+        <file>images/head.png</file>
+        <file>images/pythonBody.png</file>
+        <file>images/pythonHead.png</file>
+        <file>images/snake.png</file>
+        <file>images/Fireball.png</file>
+        <file>images/Shield.png</file>
+        <file>images/Wallpaper/GameSceneBackground_1.jpg</file>
+        <file>images/Wallpaper/GameSceneBackground_2.jpg</file>
+        <file>images/Wallpaper/GameSceneBackground_3.jpg</file>
+        <file>images/Heart.png</file>
+        <file>images/tripleShot.png</file>
+        <file>images/enemy.png</file>
+        <file>images/main.png</file>
+        <file>images/memoryBank.png</file>
+        <file>images/Wallpaper/GameSceneBackground_4.jpg</file>
+        <file>images/EnemyTank/Gun_03.png</file>
+        <file>images/EnemyTank/Hull_01.png</file>
+        <file>images/Menu/Button.png</file>
+        <file>images/Menu/MenuWindow.png</file>
+        <file>images/EnemyTank/TankProjectile.png</file>
+    </qresource>
+    <qresource prefix="/sounds">
+        <file>sound/SexkillerOnTheLoose.mp3</file>
+        <file>sound/Velocity.mp3</file>
+        <file>sound/Wave.mp3</file>
+        <file>sound/PickUpApple.mp3</file>
+        <file>sound/DestroyedPython.wav</file>
+        <file>sound/GameOver.wav</file>
+        <file>sound/Fireball.wav</file>
+        <file>sound/Laser_3.wav</file>
+        <file>sound/ShieldPickUp.mp3</file>
+        <file>sound/HeartPickUp.mp3</file>
+        <file>sound/HitSound.mp3</file>
+        <file>sound/overlapBurstWeapon.wav</file>
+        <file>sound/TripleShot.wav</file>
+        <file>sound/ButtonBloop.mp3</file>
+        <file>sound/TankDeathSound.wav</file>
+        <file>sound/TankHitSound.mp3</file>
+    </qresource>
+    <qresource prefix="/fonts">
+        <file>fonts/hudFont.ttf</file>
+    </qresource>
+</RCC>
