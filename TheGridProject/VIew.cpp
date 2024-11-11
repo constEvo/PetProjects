@@ -54,7 +54,7 @@ View::View()
     QObject::connect(settings->toMenuButton, &QPushButton::clicked, this, &View::backButton_clicked);
 
     //connect settings buttons
-    QObject::connect(settings->resBox, QComboBox::currentTextChanged, this, &View::setResolution);
+    //QObject::connect(settings->resBox, QComboBox::currentTextChanged, this, &View::setResolution);
     QObject::connect(settings->volumeSlider, SIGNAL(valueChanged(int)), this, SLOT(changeVolume(int)));
     QObject::connect(settings->effectsVolumeSlider, SIGNAL(valueChanged(int)), this, SLOT(changeEffectsVolume(int)));
 }

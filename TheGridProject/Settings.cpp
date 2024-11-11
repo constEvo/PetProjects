@@ -16,7 +16,7 @@ Settings::Settings()
     //create font
     font = new GridFonts();
 
-    //Add Snake's Label
+    //Add Game's Label
     QGraphicsTextItem* label = new QGraphicsTextItem();
     label->setPlainText("The Grid");
     label->setDefaultTextColor(Qt::white);
@@ -53,6 +53,7 @@ Settings::Settings()
 
 void Settings::addResolutionBox()
 {
+    /*
     //Video Resolution Text
     resolution = new QGraphicsTextItem();
     resolution->setPlainText("Video Resolution");
@@ -73,6 +74,7 @@ void Settings::addResolutionBox()
     resBox->setAttribute(Qt::WA_TranslucentBackground);
     resBox->setGeometry(380, 150, 150, 50);
     resProxy = addWidget(resBox);
+*/
 }
 
 void Settings::addMusicSlider()

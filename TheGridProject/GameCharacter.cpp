@@ -290,19 +290,7 @@ void GameCharacter::checkCollision()
 
     if (!gameCanvasRect.contains(playerRect))
     {
-        if (healthCooldownTimer->elapsed() >= healthCooldownDuration)
-        {
-            healthString->decreaseHealth();
-
-            //play hit sound
-            playHitSound();
-
-            if (healthString->getHealth() <= 0)
-            {
-                scene->setGameState(EGameState::GameOver);
-            }
-            healthCooldownTimer->restart();
-        }
+        scene->setGameState(EGameState::GameOver);
     }
 }
 

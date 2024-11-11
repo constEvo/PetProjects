@@ -341,7 +341,7 @@ void GameScene::restartTimers()
     //launch enemy spawn timer
     if (spawnEnemy_timer && !spawnEnemy_timer->isActive())
     {
-        spawnEnemy_timer->start(3000);
+        spawnEnemy_timer->start(2000);
     }
     //launch item's spawn timer
     if (spawnItems_timer && !spawnItems_timer->isActive())
@@ -401,7 +401,7 @@ void GameScene::move()
 void GameScene::spawnEnemy()
 {
 
-    if (cycleCount <= 1)
+    if (cycleCount <= 6)
     {
         Cycle* newCycle = new Cycle(70, player, this);
         if (newCycle)
@@ -411,8 +411,8 @@ void GameScene::spawnEnemy()
         }
     }
 
-/*
-    if (tankCount < 1 )
+
+    if (getScore()->getScore() > 250 && tankCount < 1)
     {
         EnemyTank* newTank = new EnemyTank(95, player, this);
         if (newTank)
@@ -421,7 +421,6 @@ void GameScene::spawnEnemy()
             tankCount++;
         }
     }
-*/
 }
 
 void GameScene::spawnItems()

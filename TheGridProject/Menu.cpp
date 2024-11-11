@@ -18,14 +18,6 @@ Menu::Menu()
     label->setPos(320, 70);
     addItem(label);
 
-    /*
-    //Add Snake to Menu
-    snake = QPixmap(":/image/images/snake.png");
-    snake = snake.scaled(100, 100, Qt::AspectRatioMode::KeepAspectRatio, Qt::TransformationMode::SmoothTransformation);
-    snakePng = new QGraphicsPixmapItem(snake);
-    snakePng->setPos(450, 20);
-    addItem(snakePng);
-*/
 
     //Set Qpixmap for Button Icon
     buttonPath = QString(":/image/images/Menu/Button.png");
