@@ -34,6 +34,5 @@ Escape key - pause game
 Build requirements:
 For this project was used QT 6.7.2, that includes next modules: core,gui, multimedia, multimediawidgets, spatialaudio, widgets, with using qmake, and c++ 17.
 
-![image](https://github.com/user-attachments/assets/e80f9db8-1d03-4077-8fa1-d0dd2c707535)
 
 
